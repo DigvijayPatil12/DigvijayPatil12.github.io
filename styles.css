@@ -10,7 +10,7 @@ body {
 
 header {
     background-color:  #074547;
-    color: white;
+    color: grey;
     text-align: center;
     padding: 0; /* Minimal padding to reduce height */
     position: fixed;
