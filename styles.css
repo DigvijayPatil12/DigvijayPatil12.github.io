@@ -1,15 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
+    margin: auto;
     padding: 0;
+    max-width: 70em;
     background-color: #f4f4f4;
+    line-height: 1.6;
+    padding-top: 50px; /* Adjusted padding to prevent header overlap */
 }
 
 header {
-    background-color: #333;
+    background-color:  #074547;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0; /* Minimal padding to reduce height */
+    position: fixed;
+    width: 100vw; /* Ensures the header spans the full width of the page */
+    top: 0;
+    left: 0; /* Ensures the header starts from the left edge */
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduced gap between navigation links */
+    margin-top: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Minimal padding for navigation links */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
 }
 
 section {
@@ -20,12 +47,56 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+
+
+h1 {
+    color: rgb(6, 63, 19);
+    text-align: center; /* Center-align all headers */
+}
+
+h1 {
+    color: rgb(221, 231, 224);
+    text-align: center; /* Center-align all headers */
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 15px; /* Rectangular shape with rounded corners */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+#bio p, #education p, #courses p, #contact p {
+    text-align: justify;
+    color: black;
+}
+
+#Education {
+    text-align: center; /* Center-align the text inside the courses section */
+}
+
+#courses ul {
+    text-align: center; /* Center-align the text inside the courses section */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
