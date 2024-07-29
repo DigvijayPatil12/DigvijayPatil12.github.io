@@ -50,12 +50,12 @@ section {
 
 
 h1 {
-    color: rgb(0, 0, 0);
+    color: grey;
     text-align: center; /* Center-align all headers */
 }
 
 h2 {
-    color: rgb(0,0,0);
+    color: black;
     text-align: center; /* Center-align all headers */
 }
 
@@ -93,7 +93,7 @@ ul li {
 }
 
 a {
-    color: navy;
+    color: green;
     text-decoration: none;
 }
 
